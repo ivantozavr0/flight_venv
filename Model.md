@@ -43,14 +43,14 @@
 [![er-csv.png](https://i.postimg.cc/02zyrzkN/er-csv.png)](https://postimg.cc/hfqB5P7F)
 
 ## Диаграмма взаимодействия
-    A[main.py] --> B[collector.py] 
-    A --> C[processing.py]
-    A --> D[dashboard.py]
+    A{main.py} --> B[collector.py] 
+    A --> C{processing.py}
+    A --> D{dashboard.py}
     E[FlightRadar24 API] --> B
 
     B --> F [parse.csv]
     
-    F --> C{processing.py}
+    F --> C
     
     C --> G[hourly_report.csv]
     
