@@ -11,6 +11,11 @@ try:
 except FileExistsError:
     pass
 
+try:
+    os.makedirs("logs")
+except FileExistsError:
+    pass
+
 dashboard_process = None
 
 logging.basicConfig(
